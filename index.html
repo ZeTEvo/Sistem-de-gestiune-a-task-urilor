@@ -1,0 +1,82 @@
+Interfața de chat interpretează tag-urile din `index.html` (`
+
+`, ``, `
+
+```
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OrgDesk - Mockup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>OrgDesk</h1>
+    <p>Organizează task-urile echipelor pe departamente și proiecte.</p>
+    <p class="app-count">3 sarcini, dintre care 2 active</p>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Adaugă sarcină</h2>
+      <form class="item-form">
+        <label>
+          Titlu sarcină
+          <input type="text" name="titlu" placeholder="Ex: Cere oferta de catering" required />
+        </label>
+
+        <label>
+          Departament
+          <select name="eticheta">
+            <option value="logistica">Logistică</option>
+            <option value="fundraising">Fundraising</option>
+            <option value="pr">PR</option>
+            <option value="design">Design</option>
+            <option value="social">Social</option>
+            <option value="participanti">Participanți</option>
+          </select>
+        </label>
+
+        <button type="submit">Adaugă</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Sarcinile curente</h2>
+      <!-- Când lista e goală: <p class="empty">Nu există nicio sarcină înregistrată.</p> -->
+      <ul class="item-list">
+        <li class="item-card">
+          <div class="card-details">
+            <h3>Cere oferta de pret pentru pauza de cafea</h3>
+            <span class="badge badge-logistica">Logistică</span>
+          </div>
+          <span class="status">În lucru</span>
+        </li>
+
+        <li class="item-card done">
+          <div class="card-details">
+            <h3>Trimite macheta grafica pentru bannere la tipar</h3>
+            <span class="badge badge-design">Design</span>
+          </div>
+          <span class="status">Finalizat</span>
+        </li>
+
+        <li class="item-card">
+          <div class="card-details">
+            <h3>Redacteaza e-mailurile de confirmare pentru participanti</h3>
+            <span class="badge badge-participanti">Participanți</span>
+          </div>
+          <span class="status">În lucru</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="app-footer">Proiect Tehnologii Web</footer>
+</body>
+</html>
+```
+
+---
